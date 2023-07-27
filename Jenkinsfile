@@ -2,8 +2,8 @@ pipeline{
     agent none
     environment{
         IMAGE_NAME='devopstrainer/java-mvn-privaterepos:php$BUILD_NUMBER'
-        DEV_SERVER_IP='ec2-user@ip'
-        TEST_SEVER_IP=''
+        DEV_SERVER_IP='ec2-user@65.0.97.181'
+        TEST_SEVER_IP='ec2-user@3.110.56.23'
     }
     stages{
         stage('Build the dockerimage for php and push to dockerhub on DEV_SERVER'){
